@@ -24,15 +24,15 @@
     <script src="https://kit.fontawesome.com/6f3f4b23f1.js" crossorigin="anonymous"></script>
     <!-- navgaition     menu -->
     <nav>
-      <div class="navbar">
+      <div class="navbar" >
         <div class="logo"><a href="#">Ayaz Khan</a></div>
-        <ul class="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#services">Projects</a></li>
-          <li><a href="./images/Ayaz_Khan_Resume.pdf" onclick="openresume()" download="fw21_0486-Ayaz-Khan-Resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="menu" id="nav-menu">
+          <li><a class="nav-link home" href="#home">Home</a></li>
+          <li><a class="nav-link home" href="#about">About</a></li>
+          <li><a class="nav-link home" href="#skills">Skills</a></li>
+          <li><a class="nav-link home" href="#services">Projects</a></li>
+          <li><a class="nav-link home" href="./images/Ayaz_Khan_Resume.pdf" onclick="openresume()" download="fw21_0486-Ayaz-Khan-Resume">Resume</a></li>
+          <li><a class="nav-link home" href="#contact">Contact</a></li>
 
 
 
@@ -55,12 +55,12 @@
     </nav>
 
     <!-- Home Section Start -->
-    <div id="first">
+    <div id="first" >
       <section class="home" id="home">
         <div class="home-content">
           <div class="text">
-            <div class="text-one">Hello there ,</div>
-            <div class="container">
+            <div class="text-one" Id="user-detail-intro-name">Hello there ,</div>
+            <div class="container" Id="user-detail-intro-detail">
               <div class="row">
                 <div class="col-md-12 text-center">
                   <h3 class="animate-charcter"> I'm Ayaz Khan</h3>
@@ -72,13 +72,13 @@
          
         </div>
         <div id="mypic">
-          <img src="./images/ayaz.jpg" alt="AyazPic">
+          <img class = "home-img" src="./images/ayaz.jpg" alt="AyazPic">
         </div>
     </div>     
     </section>
 
     <!-- About Section Start -->
-    <section class="about" id="about">
+    <section class="about section" id="about">
       <div class="content">
         <div class="title"><span>About Me</span></div>
         <div class="about-details">
@@ -87,7 +87,7 @@
           </div>
           <div class="right">
             <div class="topic">Coding Is My Passion</div>
-            <p>
+            <p id="user-detail-intro">
               Hello World! I'm Ayaz Khan, a Full-Stack Backend Developer,I love combining the worlds of logic and creative
               design to make eye- catching, accessible, and user friendly
               websites and applications.I am additcted to coffe and multitasking .
@@ -107,7 +107,7 @@
 
     <!-- Tech Stack Start -->
     <section class="skills" id="skills">
-        <div class="content">
+        <div class="content" id="nav-menu">
           <div class="title"><span>Tech Stack</span></div>
           <div class="skills-details">
             <div class="boxes" id="boxes">
@@ -161,31 +161,31 @@
 
       <!-- Tech Stack Start -->
     <section class="skills" id="skills">
-      <div class="content">
+      <div class="content" id="nav-menu">
         <div class="title"><span>Tech tool</span></div>
         <div class="skills-details">
           <div class="boxes" id="boxes">
-            <div class="box">
+            <div class="box" id="github-top-langs">
               <div class="per"><img class="id" src="./images/vscode.png" alt=""></div>
               <div class="topic" id="topic">VS code</div>
             </div>
-            <div class="box">
+            <div class="box" id="github-top-langs">
               <div class="per"><img class="id" src="./images/Intelij.jfif" alt=""></div>
               <div class="topic" id="topic">IntelliJ IDEA</div>
             </div>
-            <div class="box">
+            <div class="box" id="github-top-langs">
               <div class="per"><img class="id" src="./images/stslogo.png" alt=""></div>
               <div class="topic" id="topic">STS</div>
             </div>
-            <div class="box">
+            <div class="box" id="github-top-langs">
               <div class="per"><img class="id" src="./images/sql_logo.png" alt=""></div>
               <div class="topic" id="topic">My SQL</div>
             </div>
-            <div class="box">
+            <div class="box" id="github-top-langs">
               <div class="per"><img class="id" src="./images/postman.png" alt=""></div>
               <div class="topic" id="topic">Postman</div>
             </div>
-            <div class="box">
+            <div class="box" id="github-top-langs">
               <div class="per"><img class="id" src="./images/maven_logo.jfif" alt=""></div>
               <div class="topic" id="topic">Maven</div>
             </div>
@@ -202,7 +202,7 @@
                 <div class="box41">
         <div class="title"><span>My Skills</span></div>
                 </div>
-                <div class="skills-list">
+                <div class="skills-list" class="skills-card">
                     <div>
                         <i class="fa-brands fa-java"></i>
                         <h2>Java Backend Development</h2>
@@ -266,8 +266,8 @@
         <section class="services" id="services">
           <div class="content">
              <div class="title"><span>My Github Contribution</span></div> 
-             <div class="calender"><img src="./images/gitCalender.png" alt="Git calender">
-              <p id="git_stat" style="text-align: center;">
+             <div class="calender" class="react-activity-calendar"><img src="./images/gitCalender.png" alt="Git calender">
+              <p id="github-streak-stats" style="text-align: center;">
                <img  src= "https://github-readme-stats.vercel.app/api?username=ayaz-01&show_icons=true&theme=midnight-purple" /><br>
                <img  src="https://github-readme-streak-stats.herokuapp.com/?user=ayaz-01&theme=midnight-purple" /><br>
                 <!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JayeshThakare98&theme=midnight-purple" /><br> -->
@@ -279,10 +279,10 @@
 
     <!-- My project Start -->
     <section class="services" id="services">
-      <div class="content">
+      <div class="content" id="nav-menu">
         <div class="title"><span>My Projects</span></div>
-        <div class="boxes">
-          <div class="box" id="box">
+        <div class="boxes" >
+          <div class="box" id="box" class="project-card">
             <div class="icon">
               <img class="imgs" src="./images/Sephora.png" alt="asos.com" />
             </div>
@@ -300,7 +300,7 @@
               ></a>
             </div>
           </div>
-          <div class="box">
+          <div class="box" class="project-card">
             <div class="icon">
               <!-- <i class="fas fa-desktop"></i> -->
               <img class="imgs" src="./images/kickstarter.png" alt="" />
@@ -319,7 +319,29 @@
               ></a>
             </div>
           </div>
-          <div class="box">
+          <div class="box" class="project-card">
+            <div class="icon">
+              <img class="imgs" src="./images/Bus-management.png" alt="" />
+            </div>
+            <div class="topic">Buss Management System</div>
+            <p>
+              This UI-based JDBC application keeps the record of all Busses and Busses booked by a specific user..
+              <br> Features : Buses Records | Book Buses | Sign-In & Sign-up
+              <br>
+          </p>
+          <h4>Tech-Stack :</h4>
+          <h5>Java | DBMS | JDBC | MySQL | JSP | Servlet</h5>
+          
+          <li>Solo project completed in time span of five days. </li>
+            <div class="media-icons" id="linkss">
+              <a href="https://github.com/Ayaz-01/aquatic-beef-7375" target="_blank"
+                > <i id="i" class="fab fa-github"></i></a>
+              <a href="https://drive.google.com/file/d/1FdXm6hFFtp3S4YSHakez39VmDbKaglNd/view?usp=share_link" target="_blank"
+                ><button id="btns">Live <i class="fa-solid fa-arrow-turn-down-left"></i></button></i
+              ></a>
+            </div>
+          </div>
+          <div class="box" class="project-card">
             <div class="icon">
               <img class="imgs" src="./images/Bus-management.png" alt="" />
             </div>
@@ -355,11 +377,11 @@
         <div class="title"><span>Contact Me</span></div>
         <div class="text">
           <h3>Ayaz Khan</h3>
-          <h3> 📧  <span><a href="mailto:ayazkhanm3496@gmail.com">ayazkhanm3496@gmail.com</a></span></h3>
-          <h4>📞  <a href="tel:+917410115420">+917410115420</a></h4><br>
+          <h3> 📧  <span><a id="contact-email" href="mailto:ayazkhanm3496@gmail.com">ayazkhanm3496@gmail.com</a></span></h3>
+          <h4>📞  <a id="contact-phone" href="tel:+917410115420">+917410115420</a></h4><br>
           <div class="media-icons">
             <a href="https://linkedin.com/in/ayaz-khan-875a48231" target="_blank" ><i id="i" class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/ayaz-01" target="_blank"><i id="i" class="fab fa-github"></i></a>
+            <a href="https://github.com/ayaz-01" target="_blank"><i id="contact-github" class="fab fa-github"></i></a>
       </div>
       </div>
     </section>
